@@ -26,3 +26,14 @@
 //예제 출력 1
 //85
 //8
+var m = 0
+var mi = 0
+(1..<10).forEach { i in
+    let n = Int(readLine()!)!
+    if n>m {
+        m = n
+        mi = i
+    }
+}
+print(m)
+print(mi)
