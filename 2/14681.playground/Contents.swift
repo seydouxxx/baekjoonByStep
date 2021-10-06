@@ -23,3 +23,8 @@
 //-13
 //예제 출력 2
 //4
+let (a, b) = (Int(readLine()!)!, Int(readLine()!)!)
+if a>0, b>0 {print("1")}
+if a<0, b>0 {print("2")}
+if a>0, b<0 {print("4")}
+if a<0, b<0 {print("3")}
