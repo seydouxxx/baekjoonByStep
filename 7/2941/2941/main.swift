@@ -42,3 +42,19 @@
 //dz=ak
 //예제 출력 5
 //3
+import Foundation
+let dict = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="]
+var w = readLine()!
+var ctr = w.count
+
+for c in dict {
+    
+    let words = w.components(separatedBy: c)
+    ctr -= words.count-1
+    if words.count != 1, c.count > 2 {
+        ctr -= words.count - 1
+    }
+    w = words.joined(separator: "0")
+}
+print(ctr)
+
