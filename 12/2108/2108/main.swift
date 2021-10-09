@@ -128,4 +128,3 @@ for j in 0..<a.count {
 }
 
 print( String(format: "%.0f", Float(sum)/Float(n) ) )
-
